@@ -18,14 +18,13 @@
             padding-bottom: 0px;
         }
 
-        .container-fluid {
-            margin-top: 0;
-        }
-
-        .container-fluid:before {
-            height: 50px;
-            content: "";
-            display:block;
+        /*Sinon la navigation descend trop et bloque le titre de la section */
+        span.anchor {
+            margin-top: -62px; /* height of nav, in this case 54px */
+            display: block;
+            height: 62px; /* height of nav, in this case 54px */
+            visibility: hidden;
+            position: relative;
         }
 
         img {
@@ -42,7 +41,7 @@
 </head>
 
 
-<body id="charcutc" data-spy="scroll" data-target=".navbar" data-offset="80">
+<body id="charcutc" data-spy="scroll" data-target=".navbar">
 
 <div class="container-fluid">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -66,12 +65,14 @@
 
 
 <!-- banniere du logo -->
-<div class="jumbotron d-flex justify-content-center" id="logo">
+<span class="anchor" id="logo"></span>
+<div class="jumbotron d-flex justify-content-center">
     <img src="ressources/logo%20charcutc%20(0-00-00-03).jpg" alt="logo de l'association">
 </div>
 
 <!-- Presentation -->
-<div id="accueil" class="container-fluid">
+<span class="anchor" id="accueil"></span>
+<div class="container-fluid">
     <div class="row m-sm-2 m-md-4">
         <div class="col-md-8 text-md-right">
             <h2>Charc'UTC ?</h2><br>
@@ -115,7 +116,8 @@
     </div>
 </div>
 
-<div id="fonctionnement" class="container-fluid">
+<span class="anchor" id="fonctionnement"></span>
+<div class="container-fluid">
     <p>text</p>
 </div>
 
