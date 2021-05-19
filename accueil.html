@@ -15,7 +15,16 @@
         }
 
         .section {
-            background: #1e2125;
+            background-image: url("ressources/section.jpg");
+            background-repeat: repeat;
+            background-size: 40%;
+            align-items: center;
+        }
+
+        h2{
+            color: rgb(255, 255, 255);
+            -webkit-text-stroke: 0.04em #000000;
+            font-size: 3em;
         }
 
         .jumbotron {
@@ -67,9 +76,9 @@
                 <li class="nav-item"><a class="nav-link" href="#accueil">Accueil <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#fonctionnement">Fonctionnement</a></li>
-                <li class="nav-item"><a class="nav-link" href="#packs">Les packs</a></li>
                 <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Vente en
-                    cours</a>
+                    cours</a></li>
+                <li class="nav-item"><a class="nav-link" href="#packs">Les packs</a></li>
                 <li class="nav-item"><a class="nav-link" href="#team">La team</a></li>
             </ul>
         </div>
@@ -85,7 +94,7 @@
 
 <!-- Presentation -->
 <span class="anchor" id="accueil"></span>
-<div class="text-center section p-1">
+<div class="text-center section m-2 d-flex">
     <h2>Charc'UTC ?</h2>
 </div>
 <div class="container-fluid mb-5">
@@ -140,7 +149,7 @@
 
 <!-- Fonctionnement -->
 <span class="anchor" id="fonctionnement"></span>
-<div class="text-center section p-1">
+<div class="text-center section p-1 ">
     <h2>Comment fonctionne une vente ?
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-basket"
              viewBox="0 0 16 16">
@@ -367,7 +376,7 @@
                 <img src="ressources/chillet-sechage2.jpg" class="card-img-top" alt="photo de saucissons">
                 <div class="card-body">
                     <h4 class="card-title">Le pimenté - Pack emplacement 17 - 7€</h4>
-                    <p class="card-text">Pour un apéro toride</p>
+                    <p class="card-text">Pour un apéro torride</p>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Chorizo fort</li>
                         <li class="list-group-item">Piment</li>
