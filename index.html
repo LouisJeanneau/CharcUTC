@@ -89,7 +89,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse"  id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="#accueil">Accueil <span class="sr-only">(current)</span></a>
                 </li>
@@ -224,14 +224,15 @@
             <div class="card">
                 <img src="ressources/pack-all.jpg" style="" class="card-img-top" alt="photo de saucissons">
                 <div class="card-body">
-                    <h4 class="card-title">Le All-Star - 13€</h4>
+                    <h4 class="card-title">Le All-Star - Patrick - 13€</h4>
                     <p class="card-text">Bah alors ? On attend pas l'apéro ?</p>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Chèvre</li>
+                        <li class="list-group-item">Nature</li>
+                        <li class="list-group-item">Noix</li>
+                        <li class="list-group-item">Enrobé aux herbes</li>
+                        <li class="list-group-item">Piment</li>
                         <li class="list-group-item">Comté</li>
-                        <li class="list-group-item">Reblochon</li>
-                        <li class="list-group-item">Beaufort</li>
-                        <li class="list-group-item">Beaufort</li>
+                        <li class="list-group-item">Poivre</li>
                     </ul>
                 </div>
             </div>
@@ -241,7 +242,7 @@
             <div class="card">
                 <img src="ressources/classique.jpg" class="card-img-top" alt="photo de saucissons">
                 <div class="card-body">
-                    <h4 class="card-title">Le classique - 9€</h4>
+                    <h4 class="card-title">Le classique - Flots Bleus - 9€</h4>
                     <p class="card-text">Avec ça tu prends aucun risque</p>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Nature</li>
@@ -257,7 +258,7 @@
             <div class="card">
                 <img src="ressources/gout-fromage.png" class="card-img-top" alt="photo de saucissons">
                 <div class="card-body">
-                    <h4 class="card-title">Le goût fromage - 9€</h4>
+                    <h4 class="card-title">Le goût fromage - Pastis délicieux - 9€</h4>
                     <p class="card-text">Allier saucissons et fromages, fallait y penser</p>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Chèvre</li>
@@ -273,7 +274,7 @@
             <div class="card">
                 <img src="ressources/myrtille.jpg" class="card-img-top" alt="photo de saucissons">
                 <div class="card-body">
-                    <h4 class="card-title">L'original - 7€</h4>
+                    <h4 class="card-title">L'original - Shogun - 7€</h4>
                     <p class="card-text">Petite découverte culinaire en perspective</p>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Enrobé aux herbes</li>
@@ -288,7 +289,7 @@
             <div class="card">
                 <img src="ressources/piment.jpg" class="card-img-top" alt="photo de saucissons">
                 <div class="card-body">
-                    <h4 class="card-title">Le pimenté - 7€</h4>
+                    <h4 class="card-title">Le pimenté - Emplacement 17 - 7€</h4>
                     <p class="card-text">Pour un apéro toride</p>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Chorizo fort</li>
@@ -303,7 +304,7 @@
             <div class="card">
                 <img src="ressources/fromage.jpeg" class="card-img-top" alt="photo de saucissons">
                 <div class="card-body">
-                    <h4 class="card-title">Le laiteux - 8€</h4>
+                    <h4 class="card-title">Le laiteux - Fromage - 8€</h4>
                     <p class="card-text">On parle bien de morceau de fromages là, pas de saucissons</p>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Cantal 200g</li>
@@ -314,7 +315,6 @@
             </div>
         </div>
     </div>
-
 </div>
 
 <!-- La team -->
@@ -483,6 +483,14 @@
             document.getElementById("lien-nav").setAttribute("class", "nav-link disabled")
         }
     }, 1000);
+
+    $(document).ready(function () {
+        $(document).click(function () {
+            // if($(".navbar-collapse").hasClass("in")){
+            $('.navbar-collapse').collapse('hide');
+            // }
+        });
+    });
 </script>
 
 </body>
