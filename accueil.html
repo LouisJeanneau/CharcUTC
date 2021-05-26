@@ -6,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@700&family=Niramit:wght@500&family=Pattaya&display=swap" rel="stylesheet">
+
     <style>
         body {
             font: 400 15px Lato, sans-serif;
             line-height: 1;
             color: #818181;
             background: #292f33;
+            font-family: 'Pattaya', sans-serif;
         }
 
         .section {
             background-image: url("ressources/section.jpg");
             background-repeat: repeat;
-            background-size: 40%;
+            background-size: 375px;
             align-items: center;
+            text-align: center;
         }
 
         h2{
-            color: rgb(255, 255, 255);
-            -webkit-text-stroke: 0.04em #000000;
+            color: #ffffff;
+            -webkit-box-shadow: #62ff00;
             font-size: 3em;
         }
 
@@ -35,9 +40,9 @@
 
         /*Sinon la navigation descend trop et bloque le titre de la section */
         span.anchor {
-            margin-top: -62px; /* height of nav, in this case 54px */
+            margin-top: -48px; /* height of nav, in this case 54px */
             display: block;
-            height: 62px; /* height of nav, in this case 54px */
+            height: 48px; /* height of nav, in this case 54px */
             visibility: hidden;
             position: relative;
         }
@@ -45,7 +50,9 @@
         img {
             width: 100%;
             height: auto;
-            max-width: 700px;
+            max-width: 900px;
+            border-radius: 1em;
+            border: 2px #fefefe;
         }
 
         img.banner {
@@ -55,6 +62,8 @@
         p {
             line-height: 1.3;
             font-size: large;
+            font-family: 'Niramit', sans-serif;
+            color: #a7a7a7;
         }
     </style>
 </head>
@@ -94,13 +103,11 @@
 
 <!-- Presentation -->
 <span class="anchor" id="accueil"></span>
-<div class="text-center section m-2 d-flex">
-    <h2>Charc'UTC ?</h2>
+<div class="text-center bg-dark p-4 mb-4 section">
 </div>
-<div class="container-fluid mb-5">
-    <div class="row m-sm-2 m-md-4">
-        <div class="col-md-8 text-md-right">
-
+<div class="container-fluid">
+    <div class="row my-2">
+        <div class="col-md text-justify  align-self-center">
             <br>
             <p>
                 Les bons produits, la bonne charcuterie, l’ambiance amicale, voilà ce qui caractérise Charc’UTC.
@@ -111,15 +118,15 @@
                 belle France, le tout pour un prix battant toute concurrence.
             </p><br>
         </div>
-        <div class="col-md-4 text-center">
-            <img src="ressources/logo%20charcutc%20(0-00-00-03).jpg" alt="jolie photo souvenirs">
+        <div class="col-md text-justify align-self-center">
+            <img src="ressources/planche.jpg" alt="planche à découper charcut">
         </div>
     </div>
-    <div class="row m-2 m-md-4">
-        <div class="col-md-4 text-center">
-            <img src="ressources/logo%20charcutc%20(0-00-00-03).jpg" alt="jolie photo souvenirs">
+    <div class="row my-2">
+        <div class="col-md mb-2 text-center">
+            <img src="ressources/miam.jpg" alt="jolie photo souvenirs">
         </div>
-        <div class="col-md-8 align-self-center">
+        <div class="col-md align-self-center">
             <p>
                 Mais Charc’UTC c’est aussi de jolis partenariats associatifs au sein de l’UTC afin que tu puisses
                 profiter de ta charcuterie préférée partout et tout le temps.
@@ -129,8 +136,8 @@
         </div>
 
     </div>
-    <div class="row m-2 m-md-4">
-        <div class="col-md-8 text-md-right align-self-center">
+    <div class="row my-2">
+        <div class="col-md text-md-right align-self-center">
             <p>
                 Et vos fidèles serviteurs se plient même en quatre pour votre plus grand bonheur lors de la célèbre
                 charcut’run ou du cochon à la broche. (enfin, ça c’est quand y’a pas de pandémie)
@@ -140,8 +147,8 @@
                 La charcuterie, c'est la vie.
             </p><br>
         </div>
-        <div class="col-md-4 text-center">
-            <img src="ressources/logo%20charcutc%20(0-00-00-03).jpg" alt="jolie photo souvenirs">
+        <div class="col-md text-center">
+            <img src="ressources/broche.jpg" alt="jolie photo souvenirs du cochon à la broche">
         </div>
 
     </div>
@@ -149,7 +156,7 @@
 
 <!-- Fonctionnement -->
 <span class="anchor" id="fonctionnement"></span>
-<div class="text-center section p-1 ">
+<div class="text-center bg-dark pt-3 pb-2 my-4">
     <h2>Comment fonctionne une vente ?
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-basket"
              viewBox="0 0 16 16">
@@ -159,7 +166,7 @@
 </div>
 <div class="container-fluid mb-5">
     <div class="row justify-content-center m-sm-2">
-        <div class="col-md-8">
+        <div class="col-md-8 pt-4">
             <p>Je te vois devant ton écran:</p>
             <p class="font-italic px-5">“Vous êtes bien gentils, mais moi si je veux du saucisson j’ai qu’à aller au
                 supermarché !”</p>
@@ -170,8 +177,8 @@
                 l’intermédiaire (nous) n’a pas besoin de se payer !
                 <br>
                 <br>
-                La commande se déroule sur environ une semaine avec paiement sécurisé par internet, et environ une
-                semaine plus tard, la distribution commence pour nos affamés préférés.
+                La commande se déroule sur une semaine avec paiement sécurisé via ton solde PayUT, et environ une
+                semaine plus tard, la distribution commence à Benjamin Franklin pour nos affamés préférés.
                 <br><br>
                 Si les choses sont bien faites, le lien de la vente en cours devrait être juste en dessous...
             </p>
@@ -184,7 +191,7 @@
 
 <!-- Les packs -->
 <span class="anchor" id="packs"></span>
-<div class="text-center section p-1">
+<div class="text-center bg-dark pt-3 pb-2 my-4">
     <h2>C'est quoi les packs ?
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag"
              viewBox="0 0 16 16">
@@ -295,13 +302,8 @@
 
 <!-- La team -->
 <span class="anchor" id="team"></span>
-<div class="text-center section p-1">
-    <h2>C'est quoi les packs ?
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag"
-             viewBox="0 0 16 16">
-            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-        </svg>
-    </h2>
+<div class="text-center bg-dark pt-3 pb-2 my-4">
+    <h2>Qui gère ça ?</h2>
 </div>
 <div class="container-fluid p-4">
     <!-- Petit card deck pour gérer les cartes-->
